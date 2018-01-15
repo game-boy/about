@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Interactive Fiction</title>
+    <link href="main.css" rel="stylesheet" />
+</head>
+
+<body>
+<!-- <div id="player_inventory">
+  <span class="item-container"><h3>Inventory:</h3>
+    <div class="inventory-box empty"></div>
+    <div class="inventory-box empty"></div>
+    <div class="inventory-box empty"></div>
+  </span>
+</div> -->
+<!-- <div id="steps-taken">
+  <h3>Steps Taken:</h3>
+  <ul id='steps'>
+  </ul>
+</div> -->
+
+<div id="impress">
+    <div id="slide1" class="step slide">
+      <div class="slide-text">
+        <p>연습 퀴즈 풀기</p>
+        <p><a href='#slide2'>시작</a></p>
+        <div class="event-text"></div>
+     </div>
+    </div>
+    <div id="slide2" class="step slide" data-x="1500">
+      <div id="question1">
+        <div class="question">1. 다음 중 웹사이트 구축과 관계 없는 확장자는?</div>
+        <input type="radio" name="question1" value = "a"/>
+        <label>.html</label>
+        <input type="radio" name="question1" value = "a"/>
+        <label>.css</label>
+        <input type="radio" name="question1" value = "a"/>
+        <label>.exe</label>
+        <input type="radio" name="question1" value = "a"/>
+        <label>.js</label>
+        <p><a href="#slide3"> 다음으로 </a></p>
+        <p><a href="#slide1"> 처음으로 </a></p>
+      </div>
+    </div>
+    <div id="slide3" class="step slide" data-x="3000">
+      <div id="question2">
+        <div class="question">2. 다음 중 정답을 고르시오</div>
+        <input type="radio" name="question2" value = "a"/>
+        <label>오답</label>
+        <input type="radio" name="question2" value = "a"/>
+        <label>땡</label>
+        <input type="radio" name="question2" value = "a"/>
+        <label>틀렸습니다</label>
+        <input type="radio" name="question2" value = "a"/>
+        <label>정답</label>
+        <p><a href="#slide4"> 다음으로 </a></p>
+        <p><a href="#slide2"> 이전으로 </a></p>
+      </div>
+    </div>
+
+    <div id="slide4" class="step slide" data-x="3000" data-y="1500">
+      <div class="slide-text">
+        <p>연습 퀴즈 끝</p>
+        <p><a href='index.html'>시작으로</a></p>
+        <div class="event-text"></div>
+     </div>
+    </div>
+
+<script src="impress.js"></script>
+<script>impress().init();</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script>!window.jQuery && document.write('<script src="jquery-1.4.1.min.js"><\/script>')</script>
+<script src="jquery.raptorize.1.0.js"></script>
+
+<!-- <script src="game.js"></script> -->
+<!-- <script src="dragDrop.js"></script> -->
+
+</body>
+</html>
